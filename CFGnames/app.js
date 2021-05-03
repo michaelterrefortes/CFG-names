@@ -1,12 +1,6 @@
 var rules = {
     "start": ["#NP# #VP#."],
-    // "NP": ["#Det# #N#", "#Det# #N# that #VP#", "#Det# #Adj# #N#"],
-    // "VP": ["#Vtrans# #NP#", "#Vintr#"],
-    // "Det": ["The", "This", "That"],
-    // "N": ["John Keating", "Bob Harris", "Bruce Wayne", "John Constantine", "Tony Stark", "John Wick", "Sherlock Holmes", "King Leonidas"],
-    // "Adj": ["cool", "lazy", "amazed", "sweet"],
-    // "Vtrans": ["computes", "examines", "helps", "prefers", "sends", "plays with", "messes up with"],
-    // "Vintr": ["coughs", "daydreams", "whines", "slobbers", "appears", "disappears", "exists", "cries", "laughs"]
+ 
 }
 let grammar = tracery.createGrammar(rules);
 let expansion = grammar.flatten('#start#');
@@ -18,9 +12,7 @@ function generate() {
     	"area": ["Maria","Carlos", "Miguel", "Jasiel", "Michael", "Felicita", "Margarita", "Sergio", "Andrea", "Luis"],
     	"N": ["Velazquez","Rosado","Rodriguez","Ortiz","Colon","Nunez","Rosario","Freytes"],
         "NL": ["Pastrana", "Trinidad", "Velez", "Rubio","Delgado","Quinonez","Cruz"],
-    // 	"Adj": ["dangerous", "Big", "pretty", "angry"],
-    // 	"Vtrans": ["attaks", "licks", "helps", "prefers", "plays with", "messes up with"],
-    // 	"Vintr": ["coughs", "Yawn", "Hunt", "farts", "appears", "disappears", "exists", "cries", "laughs"]
+  
     }
     
     let grammar = tracery.createGrammar(data);
